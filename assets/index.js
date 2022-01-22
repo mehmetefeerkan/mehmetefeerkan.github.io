@@ -318,9 +318,9 @@ let setcolor = "0x"
       
       //----------------------------------------------------------------- ANIMATE
       
-      var animate = function() {
-        var time = Date.now() * 0.00005;
+      window.animate = function() {
         requestAnimationFrame(animate);
+        var time = Date.now() * 0.00005;
         
         city.rotation.y -= ((mouse.x * 8) - camera.rotation.y) * uSpeed;
         city.rotation.x -= (-(mouse.y * 2) - camera.rotation.x) * uSpeed;
