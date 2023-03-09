@@ -176,7 +176,7 @@ let setcolor = "0x"
         var gparticular = new THREE.CircleGeometry(0.01, 3);
         var aparticular = 5;
         
-        for (var h = 1; h<300; h++) {
+        for (var h = 1; h<100; h++) {
           var particular = new THREE.Mesh(gparticular, gmaterial);
           particular.position.set(mathRandom(aparticular), mathRandom(aparticular),mathRandom(aparticular));
           particular.rotation.set(mathRandom(),mathRandom(),mathRandom());
